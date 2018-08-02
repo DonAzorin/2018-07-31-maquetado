@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --black-foundation: #33333;
+    --color-text: #8e9fa8;
+    --color-title: #00b7c5;
+    --gradient-from: #28bfcd;
+    --gradient-middle: #17d1c5;
+    --gradient-to: #00ecaf;
+    --logo-color: #c2c7d5;
+    --inside-label: #e7eff0;
+    --white-foundation: #f3f9fa;
+    --gradient: linear-gradient(to bottom right, #28bfcd, #17d1c5, #00ecaf)
+
+}
+
+body {
+    background: var(--gradient);
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+}
+
+.grid-container {
+    display: grid;
+}
+
+.nav-bar {
+    align-items: center;
+    color: var(--white-foundation);
+    display: inline-grid;
+    grid-row: 1;  
+    grid-template-columns: minmax(40%, 61%) 1fr 1fr 1fr 1fr;
+    padding: calc(2%) calc(13%);
+}
+
+.logo {
+    cursor: pointer;
+    font-size: 24px;
+    grid-column: 1;
+}
+
+.menu-item1 {
+    cursor: pointer;
+    display: inline-grid;
+    font-size: 12px;
+    grid-column: 2;
+}
+
+.menu-item2 {
+    display: inline-grid;
+    font-size: 12px;
+    grid-column: 3;
+}
+
+.menu-item3 {
+    display: inline-grid;
+    font-size: 12px;
+    grid-column: 4;
+}
+
+.menu-item4 {
+    display: inline-grid;
+    font-size: 12px;
+    grid-column: 5;
+}
+
+.description {
+    
+    color: var(--white-foundation);
+    display: inline-grid;
+    grid-row: 2;
+    margin: 0 calc(13%);
+}
+
+.description-container {
+    grid-row: 1;
+    padding-right: calc(28%);
+    padding-top: calc(24%);
+}
+
+.title-description {
+    color: var(--white-foundation);
+    font-size: 26px;
+    padding-bottom: 5px;
+}
+
+.text-description {
+    color: var(--white-foundation);
+    font-size: 16px;
+    padding-top: 25px;
+}
+
+.download-logo {
+    height: 50px;
+    margin-top: 30px;
+    margin-right: 35px;
+}
+
+.phone {
+    padding-top: calc(20%);
+    display: inline-grid;
+    grid-column: 5;
+    height: 530px;
+}    
+
+.brand-belt {
+    align-items: center;
+    background-color: var(--white-foundation);
+    display: inline-grid;
+    filter: grayscale(100%);
+    grid-row: 3;
+    height: 50px;
+    justify-items: center;
+    padding: 25px;
+}
+
+.brand1 {
+    grid-column: 1;
+    width: calc(50%);
+}
+
+.brand2 {
+    grid-column: 2;
+    width: calc(50%);
+}
+
+.brand3 {
+    grid-column: 3;
+    width: calc(80%);
+}
+
+.brand4 {
+    grid-column: 4;
+    width: calc(80%);
+}
+
+.brand5 {
+    grid-column: 5;
+    width: calc(70%);
+}
+
+.what-you-can-do {
+    background-color: #fff;
+    display: inline-grid;
+    grid-auto-columns: 35% 30% 35%;
+    grid-row-start: 4;
+    grid-row-end:5;
+    margin: auto;
+    padding: 0 calc(8%);
+    text-align: center;
+}
+
+.color-title {
+    color: var(--color-title);
+    font-size: 27px;
+    grid-column: 2;
+    grid-row: 4;
+    line-height: 1.5em;
+    padding-top: calc(40%);
+}
+
+.color-head {
+    color: var(--color-title);
+    font-size: 18px;
+}
+
+.color-txt {
+    color: var(--color-text);
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 2em;
+
+}
+
+.item1 {
+    display: inline-block;
+    grid-column: 1;
+    grid-row:5;
+    padding: 18px 50px;
+    margin-bottom: calc(34%);
+    margin-top: calc(20%);
+}
+
+.item2 {
+    display: inline-block;
+    grid-column: 2;
+    grid-row:5;
+    padding: 18px 57px;
+    margin-bottom: calc(34%);
+    margin-top: calc(23%);
+}
+
+.item3 {
+    display: inline-block;
+    grid-column: 3;
+    grid-row:5;
+    padding: 18px 60px 18px 60px;
+    margin-bottom: calc(34%);
+    margin-top: calc(20%);
+}
+
+i {
+    background-color: var(--gradient-to);
+}
+
+.fa-compact-disc {
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.fa-thermometer-half {
+    border-radius: 100%;
+    padding: 10px 30px;
+}
+
+.fa-lightbulb {
+    border-radius: 100%;
+    padding: 10px 20px;
+}
+
+.far, .fas {
+    color: var(--white-foundation);
+    font-size: 80px;
+    height: auto;
+    margin-bottom: 45px;
+    width: auto;
+}
+
+.a-better-room {
+    background: linear-gradient(to right, rgba(243, 249, 250, 0), rgba(243, 249, 250, .2), rgba(243, 249, 250, .9),  rgba(243, 249, 250, .95),  rgba(243, 249, 250, 1)), url(assets/bedroom1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-grid;
+    height: 600px;
+    margin: auto;
+    position: relative;
+    width: 100%;
+}
+
+.a-better-room-container {
+    font-weight: bold;
+    grid-row: 6;
+    line-height: 1em;
+    margin-top: calc(4%);
+    margin-left: calc(58%);
+    padding-right: calc(20%);
+    position: absolute;
+    text-align: left;
+}
