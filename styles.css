@@ -252,19 +252,50 @@ i {
 .download-now {
   display: inline-grid;
   grid-row: 6;
-  margin: 0 calc(13%);
-  padding-top: calc(2%);
+  margin: 0 calc(11%);
+  padding-top: calc(1%);
+  padding-bottom: calc(1%);
 }
 
 .download-container {
   margin: auto;
-  padding-right: calc(28%);
-  padding-top: calc(24%);
+  margin-right: calc(43%); 
 }
   
 .contact {
   background-color: var(--white-foundation);
+  display: inline-grid;
   grid-auto-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-row: 7;
+  grid-row-start: 7;
+  grid-row-end: 8;
   }
   
+  .balam-info {
+    grid-row: 7;
+    grid-column: 1;
+  }
+
+  .company {
+    grid-row: 7;
+    grid-column: 3;
+  }
+
+  .others {
+    grid-row: 7;
+    grid-column: 4;
+  }
+
+  .newsletter {
+    grid-row: 7;
+    grid-column: 5;
+  }
+
+  .copyright {
+    grid-row: 8;
+    grid-column: 1;
+  }
+
+  .sns {
+    grid-row: 8;
+    grid-column: 5;
+  }
