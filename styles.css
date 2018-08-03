@@ -16,6 +16,10 @@
 
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   background: var(--gradient);
   font-family: 'Raleway', sans-serif;
@@ -200,21 +204,20 @@ body {
   margin-top: calc(20%);
 }
 
-i {
-  background-color: var(--gradient-to);
-}
-
 .fa-compact-disc {
+  background-color: var(--gradient-to);
   border-radius: 100%;
   padding: 10px;
 }
 
 .fa-thermometer-half {
+  background-color: var(--gradient-to);
   border-radius: 100%;
   padding: 10px 30px;
 }
 
 .fa-lightbulb {
+  background-color: var(--gradient-to);
   border-radius: 100%;
   padding: 10px 20px;
 }
@@ -265,24 +268,27 @@ i {
 .contact {
   background-color: var(--white-foundation);
   display: inline-grid;
-  grid-row-start: 7;
-  grid-row-end: 8;
-  padding: calc(5.5%) calc(16%);
+  grid-auto-columns: 42% 17% 17% 24%;
+  grid-row: 7;
+  padding: calc(4.5%) calc(16%) calc(2.5%);
 }
 
 .contact-head {
   color: var(--color-title);
   font-size: 20px;
+
 }
 
 .contact-title {
   color: var(--color-title);
+  font-size: 12px;
 }
 
 .contact-text {
   color: var(--color-text);
   font-size: 12px;
   font-weight: bold;
+  line-height: 2em;
 }
 
 .balam-info {
@@ -292,17 +298,40 @@ i {
 
 .company {
   grid-row: 7;
-  grid-column: 3;
+  grid-column: 2;
 }
 
 .others {
   grid-row: 7;
-  grid-column: 4;
+  grid-column: 3;
 }
 
 .newsletter {
   grid-row: 7;
-  grid-column: 5;
+  grid-column: 4;
+}
+
+.placeholder {
+  background-color: var(--inside-label);
+  border: none;
+  color: var(--color-text);
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  padding: 10px 14px;
+}
+
+.fa-paper-plane {
+  background-color: var(--inside-label);
+  color: var(--color-title);
+  font-size: 15px;
+  padding: 9px 10px 11px 10px;
+}
+
+.footer {
+  background-color: var(--white-foundation);
+  display: inline-grid;
+  grid-row: 8;
+  padding: 0 calc(16%) calc(4%);
 }
 
 .copyright {
@@ -311,6 +340,47 @@ i {
 }
 
 .sns {
+  font-size: 18px;
   grid-row: 8;
-  grid-column: 5;
+  grid-column: 4;
+  text-align: right;
+}
+.fa-twitter {
+  background-color: #1DA1F2;
+  border-radius: 100%;
+  color: var(--white-foundation);
+  margin: 2px;
+  padding: 5px;
+}
+
+.fa-facebook-f {
+  background-color: #3B5998;
+  border-radius: 100%;
+  color: var(--white-foundation);
+  margin: 2px;
+  padding: 5px 10px;
+}
+
+.fa-instagram {
+  background-color: #458eff;
+  border-radius: 100%;
+  color: var(--white-foundation);
+  margin: 2px;
+  padding: 5px;
+}
+
+.fa-dribbble {
+  background-color: #ea4c89;
+  border-radius: 100%;
+  color: var(--white-foundation);
+  margin: 2px;
+  padding: 5px;
+}
+
+.fa-github-alt {
+  background-color: #333;
+  border-radius: 100%;
+  color: var(--white-foundation);
+  margin: 2px;
+  padding: 5px;
 }
